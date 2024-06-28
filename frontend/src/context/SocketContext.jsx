@@ -16,7 +16,7 @@ export const SocketContextProvider = ({ children }) => {
 
     useEffect(() => {
         if(authUser) {
-        const socket = io("https://convoz-e9je.onrender.com", {
+        const socket = io("convoz07.netlify.app", {
             query: {
                 userId: authUser._id,
             },
